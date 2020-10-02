@@ -1,7 +1,7 @@
-.plan {
+/* .plan {
   background-color: var(--dark);
   text-align: center;
-}
+} */
 
 .plan__title {
   margin-bottom: 1rem;
@@ -14,7 +14,6 @@
   color: var(--light);
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .plan__cards {
@@ -25,7 +24,8 @@
 
 .card {
   margin: 0 15px;
-  padding: 2.25rem 2rem;
+  padding: 2.25rem 3.5rem;
+  border-radius: 0.3rem;
   background-color: #263238;
 }
 
@@ -45,10 +45,13 @@
   font-size: 2.5rem;
 }
 
+.amount-info {
+  color: var(--info);
+}
+
 .card-month {
   margin-top: 0.5rem;
   color: #78909c;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   text-align: center;
 }
@@ -62,7 +65,6 @@
 .card-list li {
   margin-bottom: 1rem;
   color: #cfd8dc;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.5;
@@ -81,7 +83,6 @@
   border-color: var(--teal);
   background-color: var(--teal);
   color: var(--dark);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;

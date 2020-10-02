@@ -28,6 +28,12 @@
   --dark: #11171a;
 }
 
+.container {
+  background-color: var(--dark);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Sections */
 @import "./Prices/price.css";
 @import "./Benefits/benefits.css";
