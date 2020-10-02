@@ -1,3 +1,10 @@
 .benefits {
   margin-top: 6rem;
+  display: flex;
+  color: #cfd8dc;
+}
+
+.benefits__left {
+  display: flex;
+  flex-direction: column;
 }
