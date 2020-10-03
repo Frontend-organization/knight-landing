@@ -1,0 +1,21 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.relative {
+  position: relative !important;
+}
+
+button,
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+  border: none;
+  outline: none;
+}

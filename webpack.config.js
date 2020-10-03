@@ -10,7 +10,15 @@ const compile = ({ mode }) => {
       rules: [
         {
           test: /.css$/,
-          loader: [MiniCSSExtractPlugin.loader, "css-loader"],
+          loader: [
+            MiniCSSExtractPlugin.loader,
+            {
+              loader: "css-loader",
+              options: {
+                modules: true,
+              },
+            },
+          ],
         },
         {
           test: /.jsx?$/,
@@ -18,6 +26,14 @@ const compile = ({ mode }) => {
           exclude: /node_modules/,
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
+        },
+        {
+          test: /\.(svg|png|jpg|jpeg|ttf|woff)$/,
+          loader: "file-loader",
+          options: {
+            publicPath: "assets",
+            outputPath: "assets",
           },
         },
       ],
@@ -33,6 +49,9 @@ const compile = ({ mode }) => {
     devServer: {
       port: 3000,
       hot: true,
+    },
+    resolve: {
+      extensions: [".js", ".jsx"],
     },
   };
 };

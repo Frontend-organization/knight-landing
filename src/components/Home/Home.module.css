@@ -1,0 +1,47 @@
+.Home {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 22px;
+}
+
+.heading,
+.subheading {
+  color: #fbfbfb;
+  text-align: center;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .heading {
+    font-size: 48px;
+    width: 600px;
+  }
+  .subheading {
+    font-size: 20px;
+    width: 560px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .heading {
+    width: 800px;
+  }
+  .subheading {
+    width: 700px;
+  }
+}
