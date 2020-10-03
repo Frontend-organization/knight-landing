@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "../Logo";
 import styles from "./Header.module.css";
 
-const Header = (props) => {
-  const options = [];
+const Header = () => {
   const [headerSticky, setHeaderSticky] = useState(false);
   const [headerActive, setHeaderActive] = useState(false);
   const [headerScrolling, setHeaderScrolling] = useState(false);
@@ -25,10 +24,6 @@ const Header = (props) => {
       window.removeEventListener(listener);
     };
   }, []);
-
-  useEffect(() => {
-    console.log({ headerSticky });
-  }, [headerSticky]);
 
   function toggleNavbar() {
     setHeaderActive(!headerActive);
