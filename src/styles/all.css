@@ -1,9 +1,5 @@
 @import "./normalize.css";
 
-h2 {
-  color: red;
-}
-
 * {
   margin: 0;
   padding: 0;
