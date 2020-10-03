@@ -107,44 +107,55 @@ const benefits = [
 
 function Benefits() {
   return (
-    <section className={styles.Benefits}>
-      <header className={styles.BenefitsHeader}>
-        <h2>Knight offers everything you need.</h2>
-        <h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in
-          nisi commodo, tempus odio a, vestibulum nibh.
-        </h4>
-      </header>
-      <main className={styles.BenefitsMain}>
-        {benefits.map((benefit, key) => (
-          <div key={key} className={styles.Benefit}>
-            <div
-              className={styles.BenefitIcon}
-              style={{
-                color: benefit.primaryColor,
-                backgroundColor: benefit.secondaryColor,
-              }}
-            >
-              {benefit.icon}
+    <>
+      <section className={styles.Benefits}>
+        <header className={styles.BenefitsHeader}>
+          <h2>Knight offers everything you need.</h2>
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            in nisi commodo, tempus odio a, vestibulum nibh.
+          </h4>
+        </header>
+        <main className={styles.BenefitsMain}>
+          {benefits.map((benefit, key) => (
+            <div key={key} className={styles.Benefit}>
+              <div
+                className={styles.BenefitIcon}
+                style={{
+                  color: benefit.primaryColor,
+                  backgroundColor: benefit.secondaryColor,
+                }}
+              >
+                {benefit.icon}
+              </div>
+              <h2 className={styles.BenefitTitle}>{benefit.heading}</h2>
+              <p className={styles.BenefitDescription}>{benefit.description}</p>
             </div>
-            <h2 className={styles.BenefitTitle}>{benefit.heading}</h2>
-            <p className={styles.BenefitDescription}>{benefit.description}</p>
+          ))}
+        </main>
+        <aside className={styles.DemoSection}>
+          <div className={styles.DemoTextContent}>
+            <h1>Knight is more than just a page builder</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              convallis pulvinar vestibulum. Donec eleifend, sem sed dictum
+              mattis, turpis purus placerat eros.
+            </p>
+            <Button variant="white" text="TRY THE LIVE DEMO" />
           </div>
-        ))}
-      </main>
-      <aside className={styles.DemoSection}>
-        <div className={styles.DemoTextContent}>
-          <h1>Knight is more than just a page builder</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            convallis pulvinar vestibulum. Donec eleifend, sem sed dictum
-            mattis, turpis purus placerat eros.
-          </p>
-          <Button variant="white" text="TRY THE LIVE DEMO" />
-        </div>
-        <Slider />
-      </aside>
-    </section>
+          <Slider />
+        </aside>
+      </section>
+      <svg
+        width="100%"
+        stroke="none"
+        viewBox="0 0 1000 20"
+        preserveAspectRatio="none"
+        className={styles.BenefitsThumb}
+      >
+        <polygon points="0,20 1000,20 1000,0 0,20" />
+      </svg>
+    </>
   );
 }
 

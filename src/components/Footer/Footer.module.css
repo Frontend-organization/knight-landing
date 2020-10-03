@@ -1,0 +1,92 @@
+.FooterThumb {
+  background: #11171a;
+  width: 100%;
+  display: block;
+}
+
+.Footer {
+  color: #fff;
+  background-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 88px 48px 80px 48px;
+}
+
+.FooterContent {
+  margin-bottom: 30px;
+}
+
+.FooterAbout {
+  display: flex;
+  flex-direction: column;
+  color: #768d99;
+  margin-bottom: 20px;
+}
+
+.FooterAbout h2 {
+  color: #fbfbfb;
+  margin-bottom: 22px;
+}
+
+.FooterAbout p {
+  margin-bottom: 20px;
+}
+
+.FooterLinksWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FooterLinks {
+  margin-right: 40px;
+}
+
+.FooterLinks h2 {
+  margin-bottom: 16px;
+}
+
+.FooterLinks li {
+  color: #616161;
+  margin-bottom: 16px;
+}
+
+.NetworkIcons {
+  display: flex;
+  color: #fbfbfb;
+}
+
+.NetworkIcons i {
+  margin-right: 20px;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: background-color ease-in 0.28s;
+  padding: 12px;
+}
+
+.NetworkIcons i:hover {
+  background-color: #1de9b6;
+}
+
+.FooterCredits {
+  color: #778f9b;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .FooterContent {
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .FooterAbout {
+    padding: 0px 120px 30px 20px;
+    width: 50%;
+  }
+
+  .FooterLinks li,
+  .FooterLinks h2 {
+    margin-bottom: 20px;
+  }
+}
