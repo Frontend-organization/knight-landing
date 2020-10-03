@@ -4,11 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Knight Landing</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e4521333c6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="root"></div>
-    <section class="price-cards">
-      <h2 class="price-cards-title">Choose your pricing plan.</h2>
-    </section>
+    <div class="container">
+      <section class="plan">
+        <h2 class="plan__title">Choose your pricing plan.</h2>
+        <p class="plan__text">Simply pricing - 7 Days free trial</p>
+        <div class="plan__cards">
+          <div class="card">
+            <h3 class="card-title">Personal</h3>
+            <h2 class="card-amount">$59</h2>
+            <div class="card-month">per month</div>
+            <ul class="card-list">
+              <li>1 user</li>
+              <li>10 websites</li>
+              <li>Access to premium templates</li>
+              <li>Basic support</li>
+            </ul>
+            <a href="#" class="card-button btn-primary">Start free trial</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Agency</h3>
+            <h2 class="card-amount amount-info">$159</h2>
+            <div class="card-month">per month</div>
+            <ul class="card-list">
+              <li>2-15 users</li>
+              <li>50 websites</li>
+              <li>Access to premium templates</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#" class="card-button btn-primary btn-info"
+              >Start free trial</a
+            >
+          </div>
+          <div class="card">
+            <h3 class="card-title">Enterprise</h3>
+            <h2 class="card-amount">$499</h2>
+            <div class="card-month">per month</div>
+            <ul class="card-list">
+              <li>Unlimited users</li>
+              <li>Unlimited websites</li>
+              <li>Access to premium templates</li>
+              <li>24/7 support</li>
+            </ul>
+            <a href="#" class="card-button btn-primary">Start free trial</a>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="benefits__left">
+          <h3 class="benefits__left-title">Everything is covered.</h3>
+          <p class="benefits__left-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            in nisi commodo, tempus odio a, vestibulum nibh.
+          </p>
+        </div>
+        <div class="benefits__right">
+          <ul class="benefits__right-list">
+            <li>Weekly new templates</li>
+            <li>Access to new features</li>
+            <li>MailChimp integration</li>
+            <li>Stripe integration</li>
+            <li>100 refund guarantee</li>
+            <li>Advance SEO tools</li>
+            <li>Free unlimited support</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer id="footer-container"></footer>
   </body>
 </html>

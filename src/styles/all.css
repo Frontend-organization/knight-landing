@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue: #2979ff;
+  --indigo: #3d5afe;
+  --purple: #d500f9;
+  --pink: #f50057;
+  --red: #ff1744;
+  --orange: #ff9100;
+  --yellow: #ffea00;
+  --green: #00e676;
+  --teal: #1de9b6;
+  --cyan: #00e5ff;
+  --white: #ffffff;
+  --gray: #607d8b;
+  --gray-dark: #455a64;
+  --primary: #1de9b6;
+  --secondary: #ffffff;
+  --success: #00e676;
+  --info: #00e5ff;
+  --warning: #ffea00;
+  --danger: #ff1744;
+  --light: #eceff1;
+  --dark: #11171a;
+}
+
+.container {
+  background-color: var(--dark);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Sections */
 @import "./Prices/price.css";
 @import "./Benefits/benefits.css";
