@@ -139,3 +139,9 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 35px;
 }
+
+.BenefitsThumb {
+  background-color: #000;
+  display: block;
+  fill: #11171a;
+}
