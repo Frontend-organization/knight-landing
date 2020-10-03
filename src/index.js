@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/all.css";
+import App from "./App";
 
 const appContainer = document.getElementById("root");
 
-ReactDOM.render(<h2>TODO CORRECTO AMIGO</h2>, appContainer);
+ReactDOM.render(<App />, appContainer);
