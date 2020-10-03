@@ -19,3 +19,13 @@ textarea {
   border: none;
   outline: none;
 }
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+.slick-active button {
+  background-color: #359e8e !important;
+}

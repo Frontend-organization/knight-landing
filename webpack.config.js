@@ -26,7 +26,7 @@ const compile = ({ mode }) => {
           },
         },
         {
-          test: /\.(svg|png|jpg|jpeg|ttf|woff)$/,
+          test: /\.(svg|png|jpg|jpeg|ttf|woff|eot|gif)$/,
           loader: "file-loader",
           options: {
             publicPath: "assets",
