@@ -1,0 +1,32 @@
+.ScrollTop {
+  color: #fbfbfb;
+  background-color: #109674;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  bottom: 30px;
+  right: 20px;
+  transition: all ease-out 0.3s;
+  transform: translateX(200%);
+  z-index: 3;
+}
+
+.ScrollTop:hover {
+  cursor: pointer;
+  background-color: #1de9b6;
+}
+
+.ScrollTopActive {
+  transform: translateX(0);
+}
+
+@media only screen and (min-width: 768px) {
+  .ScrollTop {
+    right: 30px;
+  }
+}
