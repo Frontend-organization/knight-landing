@@ -6,6 +6,7 @@
 .plan__title {
   margin-bottom: 1rem;
   padding: 0px 12rem;
+  padding-top: 7rem;
   color: var(--white);
   font-size: 2.5rem;
   font-family: "Inter", sans-serif;
@@ -124,6 +125,7 @@
 @media screen and (max-width: 768px) {
   .plan__title {
     padding: 0;
+    padding-top: 5rem;
   }
 
   .card {
