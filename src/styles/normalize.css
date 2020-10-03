@@ -18,6 +18,7 @@ textarea {
   font-family: "Inter", sans-serif;
   border: none;
   outline: none;
+  background-color: inherit;
 }
 
 ul,
@@ -28,4 +29,9 @@ ol {
 
 .slick-active button {
   background-color: #359e8e !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

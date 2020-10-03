@@ -1,7 +1,103 @@
 .Header {
-  padding: 36px;
-  position: absolute;
+  background-color: #000000e6;
+  left: 0%;
+  padding: 36px 20px;
+  position: fixed;
   top: 0;
-  left: 0;
+  transition: all ease-in 0.3s;
   width: 100%;
+  z-index: 1;
+  max-height: 85px;
+  overflow: hidden;
+}
+
+.HeaderContent {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.HeaderContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.HeaderActive {
+  max-height: 100vh;
+}
+
+.HeaderSticky {
+  transform: translateY(0) !important;
+  transition: all ease 0.2s;
+}
+
+.HeaderScrolling {
+  transform: translateY(-100%);
+}
+
+.Navbar {
+  color: #ffffffb3;
+  padding-top: 10px;
+}
+
+.NavbarOption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.NavbarOption:hover {
+  color: #fff;
+}
+
+.NavbarBtnAction {
+  align-items: center;
+  color: #13c095;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+}
+
+.NavbarBtnAction:hover {
+  color: #10a17d;
+}
+
+.NavbarBtnAction svg {
+  margin-right: 12px;
+}
+
+.NavbarController {
+  color: #13c095;
+  position: absolute;
+  top: 36px;
+  right: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Header {
+    max-height: 100vh;
+  }
+
+  .HeaderContent {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .Navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .NavbarOption {
+    margin-bottom: 0;
+    margin-right: 36px;
+    font-size: 18px;
+  }
+
+  .NavbarController {
+    display: none;
+  }
 }
