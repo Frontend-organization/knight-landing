@@ -41,16 +41,16 @@ const Header = () => {
         <nav className={styles.Navbar}>
           <ul className={styles.Navbar}>
             <li className={styles.NavbarOption}>
-              <a href="#">Features</a>
+              <a href="#features">Features</a>
             </li>
             <li className={styles.NavbarOption}>
-              <a href="#">Pricing</a>
+              <a href="#pricing">Pricing</a>
             </li>
             <li className={styles.NavbarOption}>
-              <a href="#">FAQ</a>
+              <a href="#faq">FAQ</a>
             </li>
             <li className={styles.NavbarOption}>
-              <a href="#">Blog</a>
+              <a href="#blog">Blog</a>
             </li>
             <button className={styles.NavbarBtnAction} type="button">
               <svg
