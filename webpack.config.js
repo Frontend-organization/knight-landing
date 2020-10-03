@@ -14,9 +14,6 @@ const compile = ({ mode }) => {
             MiniCSSExtractPlugin.loader,
             {
               loader: "css-loader",
-              options: {
-                modules: true,
-              },
             },
           ],
         },
