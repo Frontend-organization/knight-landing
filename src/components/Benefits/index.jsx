@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "../common/Button";
+import Slider from "../Slider";
 import styles from "./Benefits.module.css";
 
 const benefits = [
@@ -130,6 +132,18 @@ function Benefits() {
           </div>
         ))}
       </main>
+      <aside className={styles.DemoSection}>
+        <div className={styles.DemoTextContent}>
+          <h1>Knight is more than just a page builder</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            convallis pulvinar vestibulum. Donec eleifend, sem sed dictum
+            mattis, turpis purus placerat eros.
+          </p>
+          <Button variant="white" text="TRY THE LIVE DEMO" />
+        </div>
+        <Slider />
+      </aside>
     </section>
   );
 }
