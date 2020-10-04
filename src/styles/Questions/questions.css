@@ -1,0 +1,112 @@
+.questions {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #000000;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.questions__introduction {
+  width: 50%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.questions__title {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 60px;
+}
+
+.questions__description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #78909c;
+}
+
+.tests {
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.test__question {
+  width: 50%;
+  min-width: 270px;
+  padding: 0 4.5rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+}
+
+.test__question h6 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.test__question p {
+  margin-bottom: 1rem;
+  color: #78909c;
+}
+
+.questions__contact {
+  margin-top: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.questions__contact h5 {
+  margin-bottom: 1.5rem;
+}
+
+.questions__contact-button {
+  border: 2px solid transparent;
+  padding: 0.55rem 1.5rem;
+  border-radius: 0.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(29, 233, 182, 0.3);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: #11171a;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.questions__contact-button:hover {
+  box-shadow: 0 8px 20px rgba(29, 233, 182, 0.35);
+  transition: all 0.2s ease-out;
+  color: #ffffff;
+  background-color: #14cc9e;
+  border-color: #13c095;
+}
+
+@media screen and (max-width: 768px) {
+  .questions__introduction {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .tests {
+    width: 100%;
+  }
+
+  .test__question {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 3rem;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
