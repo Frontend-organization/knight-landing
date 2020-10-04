@@ -108,7 +108,7 @@ const benefits = [
 function Benefits() {
   return (
     <>
-      <section className={styles.Benefits}>
+      <section id="features" className={styles.Benefits}>
         <header className={styles.BenefitsHeader}>
           <h2>Knight offers everything you need.</h2>
           <h4>

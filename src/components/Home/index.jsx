@@ -14,7 +14,11 @@ const Home = () => {
         Knight is a platform that helps freelancers and companies build
         beautiful landing pages in minutes. Sign up for free
       </h2>
-      <Button variant="green" text="GET STARTED NOW" />
+      <Button
+        variant="green"
+        text="GET STARTED NOW"
+        icon="fas fa-arrow-right"
+      />
     </section>
   );
 };
