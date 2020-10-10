@@ -39,6 +39,7 @@ const compile = ({ mode }) => {
       new MiniCSSExtractPlugin(),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, "public", "index.html"),
+        favicon: path.join(__dirname, "public", "klogo.ico"),
       }),
       new webpack.ProgressPlugin(),
     ],
